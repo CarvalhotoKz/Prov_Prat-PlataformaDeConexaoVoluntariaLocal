@@ -1,0 +1,139 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout geral para sticky footer */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* O corpo da página cresce para preencher espaço */
+body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4CAF50; /* Verde esperança */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Logo com centralização vertical */
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Menu de navegação */
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul.menu li a:hover {
+    color: #ffd700;
+}
+
+/* Seção principal centralizada verticalmente, com espaçamento maior do cabeçalho */
+section {
+    flex: 1;
+    max-width: 900px;
+    margin: 60px auto 40px auto; /* topo maior para distância do header */
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    /* Centraliza o conteúdo verticalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Texto dentro da section */
+.textInt h3 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.textInt h4 {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: justify; /* Justificando o texto */
+    line-height: 1.6;
+}
+
+/* Rodapé fixo no final da página */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul.menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .textInt h3 {
+        font-size: 1.5rem;
+    }
+
+    .textInt h4 {
+        font-size: 1rem;
+    }
+
+    section {
+        margin: 40px 20px 40px 20px;
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 1.5rem;
+    }
+
+    .textInt h3 {
+        font-size: 1.3rem;
+    }
+
+    .textInt h4 {
+        font-size: 0.95rem;
+    }
+}
