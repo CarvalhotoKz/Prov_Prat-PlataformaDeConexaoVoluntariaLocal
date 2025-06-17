@@ -3,15 +3,46 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>CAV - Necessidades</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 <body>
 
-     <script src='main.js'></script>
-</body>
-<footer>
-    
-</footer>
+    <!--Cabeçalho da Página-->
+    <header>
+        <h1><div class="logo">CAV</div></h1>
+          <div>
+            <nav>
+                <ul class="menu">
+                  <li><a href="Index.html">Início</a></li>
+                  <li><a href="VisNess.html">Necessidades</a></li>
+                  <li><a href="CadNess.html">Cadastro</a></li>
+                </ul>
+           </nav>
+         </div>
+    </header>
+
+    <!--Estrutura de busca de listas-->
+    <section>
+     <input type="text" id="busca" placeholder="Buscar necessidade...">
+     <select id="filtroTipo">
+      <option value="">Todos os tipos</option>
+      <option>Educação</option>
+      <option>Saúde</option>
+      <option>Meio Ambiente</option>
+      <option>Doação de Alimentos</option>
+      <option>Doação de Roupas</option>
+      <option>Outros</option>
+     </select>
+    </section> 
+
+    <div id="listaNecessidades"></div>
+
+    <!--Rodapé do Website-->
+    <footer>
+         <p style="text-align: center;">&copy; Central de Ajuda Voluntária(CAV)</p>
+    </footer>
+  <script src='main.js'></script>
+ </body>
 </html>

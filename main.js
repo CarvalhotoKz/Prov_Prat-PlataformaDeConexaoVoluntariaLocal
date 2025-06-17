@@ -38,3 +38,4 @@ const limparFormulario = () => {
 }
 
 document.getElementById('cep').addEventListener('focusout', pesquisarCep);
+
