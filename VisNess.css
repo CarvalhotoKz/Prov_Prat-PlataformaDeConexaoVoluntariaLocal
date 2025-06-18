@@ -1,0 +1,156 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estrutura base */
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav ul.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav ul.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul.menu li a:hover {
+  color: #ffd700;
+}
+
+/* Filtros e busca */
+section {
+  padding: 30px 20px 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+section input[type="text"],
+section select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  min-width: 220px;
+}
+
+/* Lista de necessidades */
+#listaNecessidades {
+  flex: 1;
+  max-width: 1000px;
+  margin: 20px auto 40px;
+  padding: 0 20px;
+}
+
+/* Card individual */
+.necessidade-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.necessidade-card:hover {
+  transform: translateY(-3px);
+}
+
+.necessidade-card h3 {
+  font-size: 1.3rem;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.necessidade-card p {
+  margin-bottom: 5px;
+  text-align: justify;
+}
+
+.card-contato {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.card-contato a {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.card-contato a:hover {
+  background-color: #45a049;
+}
+
+/* Rodapé */
+footer {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  nav ul.menu {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-contato {
+    text-align: center;
+  }
+}

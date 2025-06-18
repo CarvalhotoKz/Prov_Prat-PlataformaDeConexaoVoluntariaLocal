@@ -26,8 +26,12 @@
 
         <div><h2>Cadastre seu Pedido</h2></div>  
           <div class="TabelaDeCadastro">
-            <label for="nomeInstituicao">Nome da Instituição</label>
-            <input type="text" id="nomeInstituicao">
+            
+            <main>
+            <form id="formCadastro">
+
+             <label for="nomeInstituicao">Nome da Instituição</label>
+             <input type="text" id="nomeInstituicao">
 
             <p><label for="categoria">Categoria da Ajuda</label></p>
             <select id="categoria">
@@ -56,13 +60,16 @@
             <p><label for="contato">Contato</label></p>
             <input type="text" id="contato" placeholder="(DDD)00000-0000">
             
-            <button type="submit" class="cadastrar">Cadastrar</button>
+             <button type="submit" class="cadastrar">Cadastrar</button>
+            </form>
+           </main>
           </div>
     </section>
 
   <footer>
     <p style="text-align: center;">&copy; Central de Ajuda Voluntária(CAV)</p>
   </footer>
-   <script src='main.js'></script>  
+   <script src="ViaCep.js" defer></script>
+   <script src="CadNess.js" defer></script> 
 </body>
 </html>
