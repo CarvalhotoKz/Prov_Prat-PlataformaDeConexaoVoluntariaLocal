@@ -31,10 +31,10 @@
             <form id="formCadastro">
 
              <label for="nomeInstituicao">Nome da Instituição</label>
-             <input type="text" id="nomeInstituicao">
+             <input type="text" id="nomeInstituicao" required>
 
             <p><label for="categoria">Categoria da Ajuda</label></p>
-            <select id="categoria">
+            <select id="categoria" required>
                 <option value="educacao">Educação</option>
                 <option value="saude">Saúde</option>
                 <option value="meioAmbiente">Meio Ambiente</option>
@@ -44,21 +44,21 @@
             </select>  
 
             <p><label for="tituloDaAjuda">Título da Ajuda</label></p>
-            <input type="text" id="tituloDaAjuda">
+            <input type="text" id="tituloDaAjuda" required>
             <p><label for="descricaoDetalhada">Descrição Detalhada</label></p>
-            <input type="text" id="descricaoDetalhada">
+            <input type="text" id="descricaoDetalhada" required>
             <p><label for="cep">*Cep</label></p>
-            <input type="text" id="cep" placeholder="Somente números(Ex:00000000)">
+            <input type="text" id="cep" placeholder="Somente números(Ex:00000000)" required>
             <p><label for="cidade">Cidade</label></p>
-            <input type="text" id="cidade">
+            <input type="text" id="cidade" required>
             <p><label for="rua">Rua</label></p>
-            <input type="text" id="rua">
+            <input type="text" id="rua" required>
             <p><label for="bairro">Bairro</label></p>
-            <input type="text" id="bairro">
+            <input type="text" id="bairro" required>
             <p><label for="estado">Estado</label></p>
-            <input type="text" id="estado">
+            <input type="text" id="estado" required>
             <p><label for="contato">Contato</label></p>
-            <input type="text" id="contato" placeholder="(DDD)00000-0000">
+            <input type="text" id="contato" placeholder="(DDD)00000-0000" required>
             
              <button type="submit" class="cadastrar">Cadastrar</button>
             </form>

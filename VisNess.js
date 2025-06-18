@@ -12,7 +12,7 @@ function renderizarLista(filtro = '', tipo = '') {
   
     filtrado.forEach(item => {
       const card = document.createElement('div');
-      card.classList.add('card');
+      card.classList.add('necessidade-card');
       card.innerHTML = `
         <h3>${item.titulo}</h3>
         <p><strong>Instituição:</strong> ${item.instituicao}</p>
