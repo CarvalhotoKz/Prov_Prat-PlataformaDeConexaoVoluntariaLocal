@@ -122,6 +122,23 @@ section select {
   background-color: #45a049;
 }
 
+.btn-excluir {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.btn-excluir:hover {
+  background-color: #c0392b;
+}
+
+
 /* Rodapé */
 footer {
   background-color: #4CAF50;

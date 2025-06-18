@@ -62,6 +62,6 @@ document.getElementById('formCadastro').addEventListener('submit', (e) => {
         }
 
         alert('Cadastro realizado com sucesso!');
-        form.submit(); // remova se for salvar em localStorage ou tratar manualmente
+        form.submit(); 
     });
 });
