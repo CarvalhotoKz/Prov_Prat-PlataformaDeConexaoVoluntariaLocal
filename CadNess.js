@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('formCadastro');
 
+    // Verifica os campos
     form.addEventListener('submit', function (e) {
         e.preventDefault();
 

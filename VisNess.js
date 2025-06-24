@@ -9,6 +9,7 @@ function renderizarLista(filtro = '', tipo = '') {
     (tipo === '' || item.tipoAjuda === tipo)
   );
 
+  // Estrutura dos Cards
   filtrado.forEach((item, index) => {
     const card = document.createElement('div');
     card.classList.add('necessidade-card');
